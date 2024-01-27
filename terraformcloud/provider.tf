@@ -3,13 +3,13 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "= v5.34.0"
+      version = "= 5.34.0"
     }
   }
 
   backend "s3" {
-    bucket = var.backend_bucket_name
-    key    = "/oidc-iam-roles/${var.tfc_hostname}/${var.tfc_organization_name}/${var.tfc_project_name}/${var.tfc_workspace_name}"
+    bucket = "[replace here when you use]"
+    key    = "oidc-iam-roles/terraform.tfstate"
   }
 }
 
