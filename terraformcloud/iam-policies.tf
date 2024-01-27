@@ -4,6 +4,8 @@ data "aws_iam_policy_document" "network_management_policy_document" {
     actions = [
       "ec2:CreateVpc",
       "ec2:DeleteVpc",
+      "ec2:DescribeVpcs",
+      "ec2:DescribeVpcAttribute",
 
       "ec2:CreateSubnet",
       "ec2:DeleteSubnet",
