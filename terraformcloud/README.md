@@ -11,4 +11,5 @@ $ terraform apply -var-file=variables.tfvars
 ```
 
 ## Reference
+https://developer.hashicorp.com/terraform/cloud-docs/workspaces/dynamic-provider-credentials/aws-configuration
 https://github.com/hashicorp-education/learn-terraform-dynamic-credentials/tree/main/aws/trust
