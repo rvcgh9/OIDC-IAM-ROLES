@@ -10,7 +10,7 @@ resource "aws_iam_openid_connect_provider" "tfc_provider" {
 
 data "aws_iam_policy_document" "assume_role_policy_document" {
   statement {
-    effect = "allow"
+    effect = "Allow"
 
     actions = [
       "sts:AssumeRoleWithWebIdentity"
