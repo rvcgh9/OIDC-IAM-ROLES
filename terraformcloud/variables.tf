@@ -2,6 +2,10 @@ variable "region" {
   default = "ap-northeast-1"
 }
 
+variable "backend_bucket_name" {
+  nullable = false
+}
+
 variable "tfc_hostname" {
   nullable = false
 }
