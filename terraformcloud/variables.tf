@@ -1,27 +1,29 @@
 variable "region" {
+  type    = string
   default = "ap-northeast-1"
 }
 
-variable "backend_bucket_name" {
-  nullable = false
-}
-
 variable "tfc_hostname" {
-  nullable = false
+  type    = string
+  default = "app.terraform.io"
 }
 
 variable "tfc_aws_audience" {
-  nullable = false
+  type     = string
+  default  = "aws.workload.identity"
 }
 
 variable "tfc_organization_name" {
+  type     = string
   nullable = false
 }
 
 variable "tfc_project_name" {
+  type     = string
   nullable = false
 }
 
 variable "tfc_workspace_name" {
+  type     = string
   nullable = false
 }
