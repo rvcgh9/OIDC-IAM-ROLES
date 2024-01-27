@@ -44,6 +44,8 @@ data "aws_iam_policy_document" "network_management_policy_document" {
       "ec2:ReleaseAddress",
       "ec2:AssociateAddress",
     ]
+
+    resources = ["*"]
   }
 }
 
