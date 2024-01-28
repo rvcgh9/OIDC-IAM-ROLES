@@ -22,6 +22,7 @@ data "aws_iam_policy_document" "network_management_policy_document" {
       "ec2:AssociateRouteTable",
       "ec2:ReplaceRouteTableAssociation",
       "ec2:DescribeRouteTables",
+      "ec2:DisassociateRouteTable",
 
       "ec2:CreateNetworkAcl",
       "ec2:DeleteNetworkAcl",
@@ -54,6 +55,7 @@ data "aws_iam_policy_document" "network_management_policy_document" {
       "ec2:AllocateAddress",
       "ec2:ReleaseAddress",
       "ec2:AssociateAddress",
+      "ec2:DisassociateAddress",
       "ec2:DescribeAddresses",
 
       "ec2:CreateTags",
