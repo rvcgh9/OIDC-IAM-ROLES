@@ -14,6 +14,9 @@ data "aws_iam_policy_document" "network_management_policy_document" {
       "ec2:CreateSecurityGroup",
       "ec2:DeleteSecurityGroup",
 
+      "ec2:CreateRoute",
+      "ec2:DeleteRoute",
+
       "ec2:CreateRouteTable",
       "ec2:DeleteRouteTable",
       "ec2:AssociateRouteTable",
@@ -42,6 +45,7 @@ data "aws_iam_policy_document" "network_management_policy_document" {
 
       "ec2:CreateNatGateway",
       "ec2:DeleteNatGateway",
+      "ec2:DescribeNatGateways",
       "ec2:AssociateNatGatewayAddress",
       "ec2:DisassociateNatGatewayAddress",
       "ec2:AssociatePrivateNatGatewayAddress",
