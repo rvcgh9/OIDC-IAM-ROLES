@@ -9,6 +9,7 @@ data "aws_iam_policy_document" "network_management_policy_document" {
 
       "ec2:CreateSubnet",
       "ec2:DeleteSubnet",
+      "ec2:DescribeSubnets",
 
       "ec2:CreateSecurityGroup",
       "ec2:DeleteSecurityGroup",
@@ -17,9 +18,11 @@ data "aws_iam_policy_document" "network_management_policy_document" {
       "ec2:DeleteRouteTable",
       "ec2:AssociateRouteTable",
       "ec2:ReplaceRouteTableAssociation",
+      "ec2:DescribeRouteTables",
 
       "ec2:CreateNetworkAcl",
       "ec2:DeleteNetworkAcl",
+      "ec2:DescribeNetworkAcls",
       "ec2:CreateNetworkAclEntry",
       "ec2:DeleteNetworkAclEntry",
       "ec2:ReplaceNetworkAclEntry",
@@ -29,11 +32,13 @@ data "aws_iam_policy_document" "network_management_policy_document" {
       "ec2:DeleteInternetGateway",
       "ec2:AttachInternetGateway",
       "ec2:DetachInternetGateway",
+      "ec2:DescribeInternetGateways",
 
       "ec2:CreateNetworkInterface",
       "ec2:DeleteNetworkInterface",
       "ec2:AttachNetworkInterface",
       "ec2:DetachNetworkInterface",
+      "ec2:DescribeNetworkInterfaces",
 
       "ec2:CreateNatGateway",
       "ec2:DeleteNatGateway",
@@ -45,6 +50,9 @@ data "aws_iam_policy_document" "network_management_policy_document" {
       "ec2:AllocateAddress",
       "ec2:ReleaseAddress",
       "ec2:AssociateAddress",
+      "ec2:DescribeAddresses",
+
+      "ec2:CreateTags",
     ]
 
     resources = ["*"]
